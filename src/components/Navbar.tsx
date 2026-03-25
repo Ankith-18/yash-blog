@@ -1,18 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav>
-      <h3>Yash</h3>
+      <h3>Yash Chauhan</h3>
 
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/about">About</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
+          Home
+        </NavLink>
+
+        <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>
+          Projects
+        </NavLink>
+
+        <NavLink to="/blog" className={({ isActive }) => isActive ? "active" : ""}>
+          Blog
+        </NavLink>
+
+        <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
+          About
+        </NavLink>
 
         <button onClick={() => window.open("https://github.com/98001yash")}>
           GitHub
+        </button>
+
+        <button
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/yash-chauhan-a415b6246/")
+          }
+        >
+          LinkedIn
         </button>
       </div>
     </nav>

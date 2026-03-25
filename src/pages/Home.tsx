@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="container">
-      <h1>Hi, I'm Yash</h1>
-
-      <p>
-        Backend Engineer focused on scalable systems, microservices, and open-source.
-      </p>
+      <h1>Yash Chauhan</h1>
+      <p>Backend Developer...</p>
     </div>
   );
 }
