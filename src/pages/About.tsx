@@ -1,25 +1,19 @@
 export default function About() {
   return (
-    <div className="container">
+    <div className="container fade-in">
       <h1>About</h1>
 
       <p>
-        I am a backend developer specializing in Spring Boot microservices,
+        Backend developer specializing in Spring Boot microservices,
         distributed systems, and event-driven architecture.
       </p>
 
       <p>
-        I work with Kafka, Redis, PostgreSQL, and GraphDB to build scalable systems.
+        Skilled in Kafka, Redis, PostgreSQL, and GraphDB for scalable systems.
       </p>
 
       <p>
-        I am also exploring DevOps tools like Docker, Kubernetes, Terraform,
-        and AWS.
-      </p>
-
-      <p>
-        I actively contribute to open source projects and enjoy solving real-world
-        engineering problems.
+        Exploring DevOps tools like Docker, Kubernetes, Terraform, and AWS.
       </p>
     </div>
   );

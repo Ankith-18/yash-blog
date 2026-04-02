@@ -1,16 +1,13 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Body */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #ffffff;
@@ -27,77 +24,66 @@ nav {
   align-items: center;
   padding: 16px 40px;
   border-bottom: 1px solid #e5e7eb;
-  background-color: #ffffff;
 }
 
-/* Navbar links container */
 nav div {
   display: flex;
-  align-items: center;
   gap: 15px;
 }
 
 /* Links */
 a {
-  color: #111111;
+  color: #111;
   text-decoration: none;
   font-size: 15px;
-  padding-bottom: 2px;
+  transition: color 0.2s;
 }
 
 a:hover {
   color: #2563eb;
 }
 
-/* Active link */
+/* Active */
 .active {
   color: #2563eb;
-  font-weight: 600;
   border-bottom: 2px solid #2563eb;
 }
 
-/* Buttons */
+/* Button */
 button {
-  background: #111111;
+  background: #111;
+  color: #fff;
   border: none;
-  color: #ffffff;
   padding: 8px 14px;
-  font-size: 14px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 button:hover {
   background: #2563eb;
+  transform: translateY(-1px);
 }
 
-  
+/* Layout */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 50px 20px;
-  min-height: 80vh; /* prevents layout shifting */
+  min-height: 80vh;
 }
 
-/* Headings */
+/* Typography */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 26px;
-  margin: 30px 0 15px;
-}
-
 h3 {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* Paragraph */
 p {
-  color: #555555;
-  font-size: 16px;
+  color: #555;
   margin-bottom: 12px;
 }
 
@@ -106,39 +92,25 @@ p {
   border: 1px solid #e5e7eb;
   padding: 20px;
   margin-bottom: 20px;
-  background: #ffffff;
+  transition: all 0.2s ease;
 }
 
-/* Subtle hover */
 .card:hover {
-  border-color: #d1d5db;
+  transform: translateY(-4px);
 }
 
-/* Small text */
-.small-text {
-  font-size: 13px;
-  color: #888888;
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    padding: 16px 20px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
-
-  .container {
-    padding: 30px 15px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  h3 {
-    font-size: 18px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

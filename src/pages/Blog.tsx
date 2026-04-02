@@ -1,6 +1,6 @@
 export default function Blog() {
   return (
-    <div className="container">
+    <div className="container fade-in">
       <h1>Blog</h1>
 
       <div className="card">

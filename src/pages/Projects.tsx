@@ -17,7 +17,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container fade-in">
       <h1>Projects</h1>
 
       <div className="card">
