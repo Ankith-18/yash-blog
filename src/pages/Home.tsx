@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <div className="container fade-in">
-      <h1>Yash Chauhan!</h1>
+      <h1>Yash Chauhan! </h1>
+      <h1>Check CI work flow </h1>
 
       <p>
         Backend Developer focused on building scalable, real-world systems using
