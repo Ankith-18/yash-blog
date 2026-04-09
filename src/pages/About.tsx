@@ -8,6 +8,7 @@ export default function About() {
         distributed systems, and event-driven architecture.
       </p>
 
+      
       <p>
         Skilled in Kafka, Redis, PostgreSQL, and GraphDB for scalable systems.
       </p>
