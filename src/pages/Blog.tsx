@@ -1,7 +1,7 @@
 export default function Blog() {
   return (
     <div className="container fade-in">
-      <h1>Blog</h1>
+      <h1>Blog!</h1>
 
       <div className="card">
         <h3>Why Microservices Over Monolith?</h3>
