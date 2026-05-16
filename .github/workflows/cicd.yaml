@@ -93,5 +93,10 @@ jobs:
         git config --global user.email "ankitkr3012005@gmail.com"
         git config --global user.name "Ankith-18"
         git add helm/yash-blog-chart/values.yaml
-        git commit -m "chore: update container image tag to ${{ github.run_id }} [skip ci]"
-        git push
+        git commit -m "chore: update container image tag to ${{ github.run_id }} [skip ci]" || exit 0
+        
+        # ─── THIS IS THE CRITICAL FIX ─────────────────────────────────────
+        # Fetch remote changes and rebase our tag update smoothly on top
+        git pull origin main --rebase
+        
+        git push origin main
