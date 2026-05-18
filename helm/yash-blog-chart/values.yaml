@@ -8,7 +8,7 @@ image:
   repository: oyank/yash-blog
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "25957594114"
+  tag: "26017802042"
 
 ingress:
   enabled: false
